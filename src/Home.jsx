@@ -1,72 +1,35 @@
-// src/Home.jsx
 import React from "react";
 import "./App.css";
+import { homeData } from "./data";
 
 function Home() {
   return (
     <div className="dashboard-home">
-      {/* Title */}
-      
-
+      <h2 className="dashboard-title">Dashboard</h2>
       {/* Stat Cards */}
       <div className="stat-cards">
-        <div className="card">
-          <div className="card-body">
-            <small>Total Customers</small>
-            <div className="display-6">17</div>
-            <p className="text-success">12% from last month</p>
+        {homeData.stats.map((stat, index) => (
+          <div className="card" key={index}>
+            <div className="card-body">
+              <small>{stat.title}</small>
+              <div className="display-6">{stat.value}</div>
+              <p className={stat.trendClass}>{stat.trend}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="card">
-          <div className="card-body">
-            <small>Total Sales</small>
-            <div className="display-6">₹161,955.00</div>
-            <p className="text-danger">8% from last month</p>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-body">
-            <small>Total Recharge</small>
-            <div className="display-6">₹6,400.00</div>
-            <p className="text-success">5% from last month</p>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-body">
-            <small>Total Withdraw</small>
-            <div className="display-6">₹5,664.00</div>
-            <p className="text-danger">3% from last month</p>
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* API Status */}
       <div className="section">
         <h3 className="dashboard-title">API Status</h3>
         <div className="api-status">
-          <div className="status-card">
-            <h4>Login API</h4>
-            <p className="expired">Expired</p>
-            <small>Expires in 0 days</small>
-          </div>
-          <div className="status-card">
-            <h4>Claim API</h4>
-            <p className="expired">Expired</p>
-            <small>Expires in 0 days</small>
-          </div>
-          <div className="status-card">
-            <h4>Recharge API</h4>
-            <p className="expired">Expired</p>
-            <small>Expires in 0 days</small>
-          </div>
-          <div className="status-card">
-            <h4>Team API</h4>
-            <p className="expired">Expired</p>
-            <small>Expires in 0 days</small>
-          </div>
+          {homeData.apis.map((api, index) => (
+            <div className="status-card" key={index}>
+              <h4>{api.name}</h4>
+              <p className="expired">{api.status}</p>
+              <small>{api.expiry}</small>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -84,20 +47,15 @@ function Home() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>369007FCE</td>
-              <td>MM-First Profitable Scheme: F1</td>
-              <td>8094881590</td>
-              <td>₹300.00</td>
-              <td>Sep 12, 2025</td>
-            </tr>
-            <tr>
-              <td>0745632A0</td>
-              <td>MM-First Profitable Scheme: F1</td>
-              <td>8094881590</td>
-              <td>₹300.00</td>
-              <td>Sep 12, 2025</td>
-            </tr>
+            {homeData.orders.map((order, index) => (
+              <tr key={index}>
+                <td>{order.id}</td>
+                <td>{order.product}</td>
+                <td>{order.mobile}</td>
+                <td>{order.price}</td>
+                <td>{order.date}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -106,26 +64,22 @@ function Home() {
       <div className="section">
         <h3 className="dashboard-title">Quick Stats</h3>
         <div className="quick-stats">
-          <div className="q-card">
-            <h4>Active Users</h4>
-            <p>1,245</p>
-          </div>
-          <div className="q-card">
-            <h4>Pending Withdrawals</h4>
-            <p>₹24,850</p>
-          </div>
-          <div className="q-card">
-            <h4>Today's Revenue</h4>
-            <p>₹8,420</p>
-          </div>
-          <div className="q-card">
-            <h4>System Health</h4>
-            <ul>
-              <li>Server Load: <span className="good">Optimal</span></li>
-              <li>Database: <span className="good">Stable</span></li>
-              <li>Storage: <span className="warn">64% Used</span></li>
-            </ul>
-          </div>
+          {homeData.quickStats.map((q, index) => (
+            <div className="q-card" key={index}>
+              <h4>{q.title}</h4>
+              {q.details ? (
+                <ul>
+                  {q.details.map((d, i) => (
+                    <li key={i}>
+                      {d.label}: <span className={d.className}>{d.status}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{q.value}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

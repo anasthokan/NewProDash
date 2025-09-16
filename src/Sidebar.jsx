@@ -1,5 +1,5 @@
-// Sidebar.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   BsGrid1X2Fill,
   BsPeopleFill,
@@ -20,89 +20,88 @@ function Sidebar() {
       <div className="sidebar-user">
         <div className="user-photo">
           {/* Placeholder – replace src with actual image if needed */}
-          {/* <img src="/user-photo.png" alt="Admin User" /> */}
         </div>
         <div className="user-name">Fox Admin </div>
       </div>
 
       <ul className="sidebar-menu">
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/">
             <BsGrid1X2Fill className="icon" />
             Dashboard
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/users">
             <BsPeopleFill className="icon" />
             All Users
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/wallets">
             <BsWallet2 className="icon" />
             Wallets
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/recharge">
             <BsCashStack className="icon" />
             Recharge
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/withdraw">
             <BsArrowUpRightCircle className="icon" />
             Withdraw
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/all-orders">
             <BsBag className="icon" />
             All Orders
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/edit-product">
             <BsBoxSeam className="icon" />
             Edit Product
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/team-income">
             <BsBarChart className="icon" />
             Team Income
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/claim-history">
             <BsCreditCard className="icon" />
             Claim History
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/all-banks">
             <BsCreditCard className="icon" />
             All Banks
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/phonepe-gateway">
             <BsCreditCard className="icon" />
             PhonePe Gateway
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/settings">
             <BsGear className="icon" />
             Settings
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#">
+          <Link to="/logout">
             <BsPower className="icon" />
             Logout
-          </a>
+          </Link>
         </li>
       </ul>
     </aside>
