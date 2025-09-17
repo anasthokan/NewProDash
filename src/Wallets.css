@@ -49,7 +49,7 @@
 }
 
 .wallets-table td:last-child {
-  color: #2563eb; /* Edit button color */
+  color: white; /* Edit button color */
   cursor: pointer;
   font-weight: 500;
 }
