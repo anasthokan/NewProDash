@@ -12,45 +12,45 @@
   color: #111827;
 }
 
-.users-container .controls {
+.users-controls {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 15px;
 }
 
-.users-container .controls input,
-.users-container .controls select {
+.users-controls input,
+.users-controls select {
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 14px;
 }
 
-.users-container table {
+.users-table {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.users-container th,
-.users-container td {
+.users-table th,
+.users-table td {
   padding: 12px 15px;
   font-size: 14px;
   text-align: left;
   border-bottom: 1px solid #eee;
 }
 
-.users-container th {
+.users-table th {
   background: #f9fafb;
   font-weight: 600;
   color: blue;
 }
 
-.users-container tbody tr:hover {
+.users-table tbody tr:hover {
   background: #f3f4f6;
 }
 
@@ -70,11 +70,8 @@
   background-color: #374151;
 }
 
-/* Responsive adjustments inside main content */
 @media screen and (max-width: 768px) {
-  .users-container .controls {
+  .users-controls {
     flex-direction: column;
   }
 }
-
-

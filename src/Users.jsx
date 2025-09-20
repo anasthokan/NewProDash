@@ -1,5 +1,5 @@
 import React from "react";
-import "./Users.css";
+import "./users.css"; // fixed lowercase import
 import usersData from "./users.json"; // your local JSON file
 
 function Users() {
@@ -8,30 +8,55 @@ function Users() {
       <h3>All Users</h3>
 
       <div className="users-controls">
-        <input type="text" placeholder="Search users" style={{width:"25rem",marginRight:"12px",borderRadius:"1rem",height:"1.4rem"}} />
+        <input
+          type="text"
+          placeholder="Search users"
+          style={{
+            width: "25rem",
+            marginRight: "12px",
+            borderRadius: "1rem",
+            height: "1.4rem",
+          }}
+        />
 
-        <select style={{border:"2px solid black",marginRight:"12px",borderRadius:"1rem",height:"1.7rem"}} >
+        <select
+          style={{
+            border: "2px solid black",
+            marginRight: "12px",
+            borderRadius: "1rem",
+            height: "2.5rem",
+          }}
+        >
           <option value="all">All Status</option>
           <option value="active">Active</option>
           <option value="inactive">Inactive</option>
         </select>
 
-        <select style={{border:"2px solid black",marginRight:"12px",borderRadius:"1rem",height:"1.6rem"}}>
+        <select
+          style={{
+            border: "2px solid black",
+            marginRight: "12px",
+            borderRadius: "1rem",
+            height: "2.5rem",
+          }}
+        >
           <option value={50}>50 rows</option>
           <option value={100}>100 rows</option>
           <option value={200}>200 rows</option>
         </select>
       </div>
-      <br></br>
+
+      <br />
+
       <table className="users-table">
         <thead>
           <tr>
-            <th style={{background:"#f5f569ff"}}>ID</th>
-            <th style={{background:"#f5f569ff"}}>Mobile</th>
-            <th style={{background:"#f5f569ff"}}>Own Code</th>
-            <th style={{background:"#f5f569ff"}}>Refer Code</th>
-            <th style={{background:"#f5f569ff"}}>Password</th>
-            <th style={{background:"#f5f569ff"}}>Actions</th>
+            <th style={{ background: "#f5f569ff" }}>ID</th>
+            <th style={{ background: "#f5f569ff" }}>Mobile</th>
+            <th style={{ background: "#f5f569ff" }}>Own Code</th>
+            <th style={{ background: "#f5f569ff" }}>Refer Code</th>
+            <th style={{ background: "#f5f569ff" }}>Password</th>
+            <th style={{ background: "#f5f569ff" }}>Actions</th>
           </tr>
         </thead>
         <tbody>
