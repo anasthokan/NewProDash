@@ -1,5 +1,5 @@
 import React from "react";
-import "./users.css";
+import "./Users.css";
 import usersData from "./users.json"; // your local JSON file
 
 function Users() {
