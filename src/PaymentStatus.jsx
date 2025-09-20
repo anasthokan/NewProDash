@@ -10,13 +10,13 @@ function PaymentStatus() {
       <table className="payment-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Mobile</th>
-            <th>Transaction ID</th>
-            <th>Amount</th>
-            <th>Status</th>
-            <th>Created At</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>ID</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Transaction ID</th>
+            <th style={{background:"#f5f569ff"}}>Amount</th>
+            <th style={{background:"#f5f569ff"}}>Status</th>
+            <th style={{background:"#f5f569ff"}}>Created At</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>

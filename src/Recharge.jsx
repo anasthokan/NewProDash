@@ -14,13 +14,13 @@ function Recharge() {
       <table className="recharge-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Mobile</th>
-            <th>Amount</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Transaction ID</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>ID</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Amount</th>
+            <th style={{background:"#f5f569ff"}}>Date</th>
+            <th style={{background:"#f5f569ff"}}>Status</th>
+            <th style={{background:"#f5f569ff"}}>Transaction ID</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>

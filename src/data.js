@@ -51,13 +51,7 @@ export const homeData = {
     { title: "Active Users", value: "1,245" },
     { title: "Pending Withdrawals", value: "₹24,850" },
     { title: "Today's Revenue", value: "₹8,420" },
-    {
-      title: "System Health",
-      details: [
-        { label: "Server Load", status: "Optimal", className: "good" },
-        { label: "Database", status: "Stable", className: "good" },
-        { label: "Storage", status: "64% Used", className: "warn" }
       ]
-    }
-  ]
-};
+    };
+  
+

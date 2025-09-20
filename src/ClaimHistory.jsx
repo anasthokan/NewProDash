@@ -50,11 +50,11 @@ const ClaimHistory = () => {
       <table className="claim-history-table">
         <thead>
           <tr>
-            <th>Mobile Number</th>
-            <th>Order ID</th>
-            <th>Daily Amount</th>
-            <th>Cycle</th>
-            <th>Claim Date</th>
+            <th style={{background:"#f5f569ff"}}>Mobile Number</th>
+            <th style={{background:"#f5f569ff"}}>Order ID</th>
+            <th style={{background:"#f5f569ff"}}>Daily Amount</th>
+            <th style={{background:"#f5f569ff"}}>Cycle</th>
+            <th style={{background:"#f5f569ff"}}>Claim Date</th>
           </tr>
         </thead>
         <tbody>

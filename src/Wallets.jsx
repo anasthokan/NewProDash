@@ -16,12 +16,12 @@ function Wallets() {
       <table className="wallets-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Mobile</th>
-            <th>Personal Wallet</th>
-            <th>Income</th>
-            <th>Balance Meter</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>ID</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Personal Wallet</th>
+            <th style={{background:"#f5f569ff"}}>Income</th>
+            <th style={{background:"#f5f569ff"}}>Balance Meter</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -32,7 +32,7 @@ function Wallets() {
               <td>{wallet.personalWallet}</td>
               <td>{wallet.income}</td>
               <td>{wallet.balanceMeter}</td>
-              <td className="edit-btn">Edit</td>
+              <td className="editbtn">Edit</td>
             </tr>
           ))}
         </tbody>

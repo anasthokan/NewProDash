@@ -19,9 +19,11 @@ function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar-user">
         <div className="user-photo">
+          <img src="https://img.freepik.com/premium-vector/blue-fire-icon-vector_690841-792.jpg" style={{marginTop:"1rem",marginBottom:"0px"}}></img>
           {/* Placeholder – replace src with actual image if needed */}
         </div>
-        <div className="user-name">Fox Admin </div>
+        <div className="user-name" style={{marginLeft:"1rem",marginBottom:"0px"}}><b>Fox Admin</b> </div>
+       
       </div>
 
       <ul className="sidebar-menu">

@@ -29,12 +29,12 @@ function Orders() {
       <table className="orders-table">
         <thead>
           <tr>
-            <th>Mobile</th>
-            <th>Order ID</th>
-            <th>Product</th>
-            <th>Created At</th>
-            <th>Expiry Status</th>
-            <th>Price</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Order ID</th>
+            <th style={{background:"#f5f569ff"}}>Product</th>
+            <th style={{background:"#f5f569ff"}}>Created At</th>
+            <th style={{background:"#f5f569ff"}}>Expiry Status</th>
+            <th style={{background:"#f5f569ff"}}>Price</th>
           </tr>
         </thead>
         <tbody>

@@ -32,14 +32,14 @@ function TeamIncome() {
       <table className="team-income-table">
         <thead>
           <tr>
-            <th>Claimer Mobile</th>
-            <th>User Mobile</th>
-            <th>Amount</th>
-            <th>Product</th>
-            <th>Level</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>Claimer Mobile</th>
+            <th style={{background:"#f5f569ff"}}>User Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Amount</th>
+            <th style={{background:"#f5f569ff"}}>Product</th>
+            <th style={{background:"#f5f569ff"}}>Level</th>
+            <th style={{background:"#f5f569ff"}}>Date</th>
+            <th style={{background:"#f5f569ff"}}>Status</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>

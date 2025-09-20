@@ -13,11 +13,11 @@ function BankAccountManagement() {
       <table className="bank-table">
         <thead>
           <tr>
-            <th>Mobile</th>
-            <th>Account No</th>
-            <th>IFSC Code</th>
-            <th>Account Name</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Account No</th>
+            <th style={{background:"#f5f569ff"}}>IFSC Code</th>
+            <th style={{background:"#f5f569ff"}}>Account Name</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>

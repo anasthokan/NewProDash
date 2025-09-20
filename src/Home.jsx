@@ -39,11 +39,11 @@ function Home() {
         <table className="orders-table">
           <thead>
             <tr>
-              <th>Order ID</th>
-              <th>Product</th>
-              <th>Mobile</th>
-              <th>Price</th>
-              <th>Date</th>
+              <th style={{background:"#f5f569ff"}}>Order ID</th>
+              <th style={{background:"#f5f569ff"}}>Product</th>
+              <th style={{background:"#f5f569ff"}}>Mobile</th>
+              <th style={{background:"#f5f569ff"}}>Price</th>
+              <th style={{background:"#f5f569ff"}}>Date</th>
             </tr>
           </thead>
           <tbody>
@@ -60,28 +60,61 @@ function Home() {
         </table>
       </div>
 
-      {/* Quick Stats */}
-      <div className="section">
-        <h3 className="dashboard-title">Quick Stats</h3>
-        <div className="quick-stats">
-          {homeData.quickStats.map((q, index) => (
-            <div className="q-card" key={index}>
-              <h4>{q.title}</h4>
-              {q.details ? (
-                <ul>
-                  {q.details.map((d, i) => (
-                    <li key={i}>
-                      {d.label}: <span className={d.className}>{d.status}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p>{q.value}</p>
-              )}
-            </div>
-          ))}
+     <div className="section">
+  <h3 className="dashboard-title">Quick Stats</h3>
+  <div className="quick-stats">
+    {homeData.quickStats.map((q, index) => (
+      <div className="q-card" key={index}>
+        <div className="q-card-header">
+          <div className={`q-icon ${q.iconBg}`}>
+            {q.icon} {/* pass react-icon component from data */}
+          </div>
+          <h4>{q.title}</h4>
         </div>
+        {q.details ? (
+          <ul>
+            {q.details.map((d, i) => (
+              <li key={i}>
+                {d.label}: <span className={d.className}>{d.status}</span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>{q.value}</p>
+        )}
       </div>
+    ))}
+  </div>
+</div>
+
+
+      <div className="system-health">
+      <h3>System Health</h3>
+
+      <div className="health-item">
+        <span>Server Load</span>
+        <div className="progress-bar">
+          <div className="progress-fill optimal" style={{ width: "35%" }}></div>
+        </div>
+        <span className="status optimal-text">Optimal</span>
+      </div>
+
+      <div className="health-item">
+        <span>Database</span>
+        <div className="progress-bar">
+          <div className="progress-fill stable" style={{ width: "20%" }}></div>
+        </div>
+        <span className="status stable-text">Stable</span>
+      </div>
+
+      <div className="health-item">
+        <span>Storage</span>
+        <div className="progress-bar">
+          <div className="progress-fill warning" style={{ width: "64%" }}></div>
+        </div>
+        <span className="status warning-text">64% Used</span>
+      </div>
+    </div>
     </div>
   );
 }

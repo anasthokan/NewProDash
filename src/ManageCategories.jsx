@@ -29,22 +29,22 @@ function ManageCategories() {
       <table className="product-table">
         <thead>
           <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>Cycle</th>
-            <th>Daily</th>
-            <th>Total</th>
-            <th>Badge</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>Image</th>
+            <th style={{background:"#f5f569ff"}}>Name</th>
+            <th style={{background:"#f5f569ff"}}>Category</th>
+            <th style={{background:"#f5f569ff"}}>Price</th>
+            <th style={{background:"#f5f569ff"}}>Cycle</th>
+            <th style={{background:"#f5f569ff"}}>Daily</th>
+            <th style={{background:"#f5f569ff"}}>Total</th>
+            <th style={{background:"#f5f569ff"}}>Badge</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>
           {products.map((item) => (
             <tr key={item.id}>
               <td>
-                <img src={item.imageUrl} alt={item.name} width="50" />
+                <img src={item.image} alt={item.name} width="50" />
               </td>
               <td>{item.name}</td>
               <td>{item.category}</td>

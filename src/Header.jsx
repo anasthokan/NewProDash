@@ -4,7 +4,7 @@ import { BsBell, BsEnvelope, BsSearch, BsPersonCircle } from "react-icons/bs";
 function Header() {
   return (
     <header className="header">
-      <h2 className="htitle">Dashboard</h2>
+      
       {/* Left side: search bar */}
       <div className="header-left">
         <BsSearch className="icon" />
@@ -18,7 +18,7 @@ function Header() {
       {/* Right side: icons + user */}
       <div className="header-right">
         <div className="icon-box">
-          <BsBell className="icon" />5
+          <BsBell className="icon"/>5
         </div>
         <div className="icon-box">
           <BsEnvelope className="icon" />

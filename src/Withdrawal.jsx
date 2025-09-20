@@ -33,15 +33,15 @@ function Withdrawal() {
       <table className="withdraw-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Mobile</th>
-            <th>Amount</th>
-            <th>Account Number</th>
-            <th>IFSC Code</th>
-            <th>Account Name</th>
-            <th>Date/Time</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th style={{background:"#f5f569ff"}}>ID</th>
+            <th style={{background:"#f5f569ff"}}>Mobile</th>
+            <th style={{background:"#f5f569ff"}}>Amount</th>
+            <th style={{background:"#f5f569ff"}}>Account Number</th>
+            <th style={{background:"#f5f569ff"}}>IFSC Code</th>
+            <th style={{background:"#f5f569ff"}}>Account Name</th>
+            <th style={{background:"#f5f569ff"}}>Date/Time</th>
+            <th style={{background:"#f5f569ff"}}>Status</th>
+            <th style={{background:"#f5f569ff"}}>Actions</th>
           </tr>
         </thead>
         <tbody>

@@ -54,5 +54,14 @@
   font-weight: 500;
 }
 
+.editbtn{
+  color: white;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 
  
